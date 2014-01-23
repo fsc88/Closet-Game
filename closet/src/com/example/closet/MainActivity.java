@@ -84,11 +84,7 @@ public class MainActivity extends BaseGameActivity {
 	            public void onTimePassed(final TimerHandler pTimerHandler) 
 	            {
 	                mEngine.unregisterUpdateHandler(pTimerHandler);
-	                // load menu resources, create menu scene
 	                SceneManager.getInstance().createMenuScene();
-	                // set menu scene using scene manager
-	                // disposeSplashScene();
-	                // READ NEXT ARTICLE FOR THIS PART.
 	            }
 	    }));
 	    pOnPopulateSceneCallback.onPopulateSceneFinished();
